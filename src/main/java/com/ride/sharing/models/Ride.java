@@ -12,14 +12,21 @@ import javax.persistence.*;
 public class Ride {
     @Id
     private String id;
+
     private String source;
+
     private String destination;
+
     private int availableSeats;
+
     @ManyToOne
     private User owner;
+
     @OneToOne
     private User takenBy;
+
     @OneToOne
     private Vehicle vehicle;
+
     private boolean taken;
 }

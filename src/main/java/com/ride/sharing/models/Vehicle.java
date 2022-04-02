@@ -18,6 +18,8 @@ import javax.persistence.Table;
 public class Vehicle {
     @Id
     private String id;
+
     private String name;
+
     private int totalSeats;
 }

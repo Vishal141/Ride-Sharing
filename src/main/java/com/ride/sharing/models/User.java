@@ -18,7 +18,10 @@ import javax.persistence.Table;
 public class User {
     @Id
     private String username;
+
     private String name;
+
     private String contact;
+
     private String password;
 }
