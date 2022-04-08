@@ -6,5 +6,5 @@ import lombok.Setter;
 
 @Getter @Setter @NoArgsConstructor
 public class UserLocationDetails extends LocationDetails{
-		
+
 }

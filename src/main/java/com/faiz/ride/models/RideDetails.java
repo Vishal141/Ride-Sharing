@@ -13,20 +13,17 @@ public class RideDetails {
 
 	@Id
 	private int id;
+	private int availableSeats;
 	private String name;
-
-	@OneToOne
-	@JoinColumn
-	private VehicleDetails vehicleDetails;
+	private String vehicleName;
 	private String origin;
 	private String destination;
 
-	public RideDetails(int id, String name, VehicleDetails vehicleDetails, String origin,
-			String destination) {
-		super();
+	public RideDetails(int id, int availableSeats, String name, String vehicleName, String origin, String destination) {
 		this.id = id;
+		this.availableSeats = availableSeats;
 		this.name = name;
-		this.vehicleDetails = vehicleDetails;
+		this.vehicleName = vehicleName;
 		this.origin = origin;
 		this.destination = destination;
 	}

@@ -1,8 +1,6 @@
 package com.faiz.ride.models;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -18,14 +16,12 @@ public class VehicleDetails {
 	@Id
 	private int id;
 	private String name;
-	private String vehcileName;
-	private String modelNumber;
+	private String vehicleName;
 
-	public VehicleDetails(int id, String name, String vehcileName, String modelNumber) {
+	public VehicleDetails(int id, String name, String vehicleName) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.vehcileName = vehcileName;
-		this.modelNumber = modelNumber;
+		this.vehicleName = vehicleName;
 	}
 }
